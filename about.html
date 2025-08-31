@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wajahat Ali Mir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>mrwajahatalimir</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact us</a></li>
+                <li><a href="tel:+923700882006" class="nav-phone">+923700882006</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-content animate-card">
+                    <h1>About Wajahat Ali Mir</h1>
+                    <p class="about-intro">Passionate Android developer with 5+ years of experience crafting exceptional mobile experiences using cutting-edge technologies like Kotlin and Jetpack Compose.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-details">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card animate-card">
+                        <h3>My Journey</h3>
+                        <p>Started as a mobile enthusiast and evolved into a professional Android developer, specializing in modern UI frameworks and performance optimization. Every app I build is a testament to clean code and user-centered design.</p>
+                    </div>
+                    <div class="about-card animate-card">
+                        <h3>Technical Expertise</h3>
+                        <p>Proficient in Kotlin, Jetpack Compose, Android Architecture Components, and modern development practices. I focus on creating scalable, maintainable applications that stand the test of time.</p>
+                    </div>
+                    <div class="about-card animate-card">
+                        <h3>My Approach</h3>
+                        <p>I believe in understanding your business needs first, then crafting solutions that not only meet requirements but exceed expectations. Every project is an opportunity to create something remarkable.</p>
+                    </div>
+                    <div class="about-card animate-card">
+                        <h3>Global Reach</h3>
+                        <p>Working with clients across 3 continents has given me insights into diverse markets and user behaviors, enabling me to build apps that resonate with global audiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p>&copy; Wajahat Ali Mir</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Contact: <a href="tel:+923700882006">+923700882006</a></p>
+                    <p>Email: <a href="mailto:mrwajahatalimir@gmail.com">mrwajahatalimir@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
