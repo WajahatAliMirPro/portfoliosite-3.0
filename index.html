@@ -18,6 +18,7 @@
                 <li><a href="contact.html" class="nav-link">Contact us</a></li>
                 <li><a href="tel:+923700882006" class="nav-phone">+923700882006</a></li>
             </ul>
+             Removed hamburger menu JavaScript functionality 
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -27,10 +28,10 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+         Hero Section 
         <section class="hero">
             <div class="container">
-                <div class="hero-content animate-card">
+                <div class="hero-content">
                     <h1 class="hero-title">Wajahat Ali Mir | Android Apps Developer</h1>
                     <p class="hero-subtitle">Crafting powerful Android experiences with Kotlin & Jetpack Compose — built to perform and delight.</p>
                     <div class="hero-image">
@@ -40,26 +41,26 @@
             </div>
         </section>
 
-        <!-- Why Build Section -->
+         Why Build Section 
         <section class="why-build">
             <div class="container">
-                <div class="section-header animate-card">
+                <div class="section-header">
                     <h2>Why Build Your App With Me?</h2>
                 </div>
                 <div class="features-grid">
-                    <div class="feature-card animate-card">
+                    <div class="feature-card">
                         <h3>Jetpack Compose Modern UI</h3>
                         <p>Future-ready, elegant, and intuitive</p>
                     </div>
-                    <div class="feature-card animate-card">
+                    <div class="feature-card">
                         <h3>Performance Focus</h3>
                         <p>Fast-loading, responsive, and optimized for real users</p>
                     </div>
-                    <div class="feature-card animate-card">
+                    <div class="feature-card">
                         <h3>Scalable Foundation</h3>
                         <p>Thoughtful architecture that grows with your idea</p>
                     </div>
-                    <div class="feature-card animate-card">
+                    <div class="feature-card">
                         <h3>Clean, Maintainable Code</h3>
                         <p>Industry-standard practices for long-term maintainability</p>
                     </div>
@@ -67,29 +68,29 @@
             </div>
         </section>
 
-        <!-- Services Section -->
+         Services Section 
         <section class="services">
             <div class="container">
-                <div class="section-header animate-card">
+                <div class="section-header">
                     <h2>App Development Services</h2>
                     <div class="services-image">
                         <img src="/placeholder.svg?height=250&width=400" alt="Apps floating outside phone" />
                     </div>
                 </div>
                 <div class="services-grid">
-                    <div class="service-card animate-card">
+                    <div class="service-card">
                         <h3>Custom Android Apps</h3>
                         <p>Tailored business, utility, or startup solutions</p>
                     </div>
-                    <div class="service-card animate-card">
+                    <div class="service-card">
                         <h3>UI/UX with Jetpack Compose</h3>
                         <p>Stylish, modern interfaces built for engagement</p>
                     </div>
-                    <div class="service-card animate-card">
+                    <div class="service-card">
                         <h3>Performance & Optimization</h3>
                         <p>Smooth animations, fast load times, seamless UX</p>
                     </div>
-                    <div class="service-card animate-card">
+                    <div class="service-card">
                         <h3>Maintenance & Updates</h3>
                         <p>Long-term support to keep apps running flawlessly</p>
                     </div>
@@ -97,22 +98,22 @@
             </div>
         </section>
 
-        <!-- Portfolio Section -->
+         Portfolio Section 
         <section class="portfolio">
             <div class="container">
-                <div class="section-header animate-card">
+                <div class="section-header">
                     <h2>Some of My Work</h2>
                 </div>
                 <div class="portfolio-grid">
-                    <div class="portfolio-card animate-card">
+                    <div class="portfolio-card">
                         <h3>Smart Expense Tracker App</h3>
                         <p>A cross-platform mobile app designed to simplify personal finance management. Features include AI-powered spending insights, real-time budget tracking, and cloud synchronization for seamless access across devices</p>
                     </div>
-                    <div class="portfolio-card animate-card">
+                    <div class="portfolio-card">
                         <h3>E-Commerce Mobile App</h3>
                         <p>A scalable mobile app for online shopping, built with a clean UI and secure payment integration. It includes product catalogs, advanced search, order tracking, and push notifications for customer engagement.</p>
                     </div>
-                    <div class="portfolio-card animate-card">
+                    <div class="portfolio-card">
                         <h3>Health & Fitness Companion</h3>
                         <p>An all-in-one fitness tracking application offering step counting, meal planning, and workout guidance. Built with React Native and Firebase for real-time health data synchronization and user-friendly dashboards</p>
                     </div>
@@ -120,25 +121,25 @@
             </div>
         </section>
 
-        <!-- Stats Section -->
+         Stats Section 
         <section class="stats">
             <div class="container">
-                <div class="section-header animate-card">
+                <div class="section-header">
                     <h2>By the Numbers</h2>
                     <div class="stats-image">
                         <img src="/placeholder.svg?height=200&width=300" alt="Development process" />
                     </div>
                 </div>
                 <div class="stats-grid">
-                    <div class="stat-card animate-card">
+                    <div class="stat-card">
                         <h3>10+</h3>
                         <p>Apps Launched</p>
                     </div>
-                    <div class="stat-card animate-card">
+                    <div class="stat-card">
                         <h3>5+</h3>
                         <p>Years Crafting Mobile Solutions</p>
                     </div>
-                    <div class="stat-card animate-card">
+                    <div class="stat-card">
                         <h3>3</h3>
                         <p>Clients Across Continents</p>
                     </div>
@@ -161,34 +162,6 @@
         </div>
     </footer>
 
-    <script>
-        // Simple mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Scroll animation observer
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animate-card elements
-        document.querySelectorAll('.animate-card').forEach(card => {
-            observer.observe(card);
-        });
-    </script>
+     Removed all JavaScript code 
 </body>
 </html>

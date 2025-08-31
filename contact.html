@@ -18,6 +18,7 @@
                 <li><a href="contact.html" class="nav-link active">Contact us</a></li>
                 <li><a href="tel:+923700882006" class="nav-phone">+923700882006</a></li>
             </ul>
+             Removed hamburger menu JavaScript functionality 
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -29,7 +30,7 @@
     <main>
         <section class="contact-hero">
             <div class="container">
-                <div class="contact-content animate-card">
+                <div class="contact-content">
                     <h1>Get In Touch</h1>
                     <p class="contact-intro">Ready to bring your Android app idea to life? Let's discuss your project and create something amazing together.</p>
                 </div>
@@ -39,24 +40,24 @@
         <section class="contact-details">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-card animate-card">
+                    <div class="contact-card">
                         <h3>Phone</h3>
                         <p><a href="tel:+923700882006">+923700882006</a></p>
                         <small>Available for calls and WhatsApp</small>
                     </div>
-                    <div class="contact-card animate-card">
+                    <div class="contact-card">
                         <h3>Email</h3>
                         <p><a href="mailto:mrwajahatalimir@gmail.com">mrwajahatalimir@gmail.com</a></p>
                         <small>Response within 24 hours</small>
                     </div>
-                    <div class="contact-card animate-card">
+                    <div class="contact-card">
                         <h3>Project Discussion</h3>
                         <p>Free consultation available</p>
                         <small>Let's talk about your app requirements</small>
                     </div>
                 </div>
 
-                <div class="contact-form-section animate-card">
+                <div class="contact-form-section">
                     <h2>Send a Message</h2>
                     <form class="contact-form">
                         <div class="form-group">
@@ -102,39 +103,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Scroll animation observer
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-card').forEach(card => {
-            observer.observe(card);
-        });
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-        });
-    </script>
+     Removed all JavaScript code 
 </body>
 </html>

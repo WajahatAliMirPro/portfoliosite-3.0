@@ -18,6 +18,7 @@
                 <li><a href="contact.html" class="nav-link">Contact us</a></li>
                 <li><a href="tel:+923700882006" class="nav-phone">+923700882006</a></li>
             </ul>
+             Removed hamburger menu JavaScript functionality 
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -29,7 +30,7 @@
     <main>
         <section class="about-hero">
             <div class="container">
-                <div class="about-content animate-card">
+                <div class="about-content">
                     <h1>About Wajahat Ali Mir</h1>
                     <p class="about-intro">Passionate Android developer with 5+ years of experience crafting exceptional mobile experiences using cutting-edge technologies like Kotlin and Jetpack Compose.</p>
                 </div>
@@ -39,19 +40,19 @@
         <section class="about-details">
             <div class="container">
                 <div class="about-grid">
-                    <div class="about-card animate-card">
+                    <div class="about-card">
                         <h3>My Journey</h3>
                         <p>Started as a mobile enthusiast and evolved into a professional Android developer, specializing in modern UI frameworks and performance optimization. Every app I build is a testament to clean code and user-centered design.</p>
                     </div>
-                    <div class="about-card animate-card">
+                    <div class="about-card">
                         <h3>Technical Expertise</h3>
                         <p>Proficient in Kotlin, Jetpack Compose, Android Architecture Components, and modern development practices. I focus on creating scalable, maintainable applications that stand the test of time.</p>
                     </div>
-                    <div class="about-card animate-card">
+                    <div class="about-card">
                         <h3>My Approach</h3>
                         <p>I believe in understanding your business needs first, then crafting solutions that not only meet requirements but exceed expectations. Every project is an opportunity to create something remarkable.</p>
                     </div>
-                    <div class="about-card animate-card">
+                    <div class="about-card">
                         <h3>Global Reach</h3>
                         <p>Working with clients across 3 continents has given me insights into diverse markets and user behaviors, enabling me to build apps that resonate with global audiences.</p>
                     </div>
@@ -74,33 +75,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Scroll animation observer
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-card').forEach(card => {
-            observer.observe(card);
-        });
-    </script>
+     Removed all JavaScript code 
 </body>
 </html>
